@@ -14,7 +14,7 @@ module.exports = {
         bgShade: "#F5FCFF",
       },
       screens: {
-        "2xl": "1420px",
+        "2xl": "1320px",
       },
     },
   },

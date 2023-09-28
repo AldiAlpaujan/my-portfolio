@@ -4,9 +4,8 @@ import { ref } from 'vue';
 const header = ref(null);
 const menu = ref([
     'Home',
-    'Portfolio',
     'About Me',
-    'Testimonials',
+    'Portfolio',
 ]);
 const menuActive = ref('Home');
 const menuIsActive = ref(false);
@@ -29,7 +28,9 @@ function onHamburgerClick() {
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
                     <a href="" class="">
-                        <img src="../assets/img/Logo.png" alt="logo" class="w-32 py-5">
+                        <h2 class="text-heading text-xl font-bold py-5">
+                            Aldi <span class="text-primary">Alpaujan</span>
+                        </h2>
                     </a>
                 </div>
                 <div class="flex items-center px-4">
@@ -53,10 +54,10 @@ function onHamburgerClick() {
                     </nav>
                 </div>
                 <div class="hidden px-4 lg:block">
-                    <button class="py-[12px] px-[14px] text-primary border border-primary rounded-md
+                    <button class="py-[10px] px-[16px] my-2 text-primary border border-primary rounded-md
                     transition-all duration-500 hover:bg-primary hover:text-white
                     active:opacity-80 active:shadow-lg">
-                        Contact Me
+                        Hubungi Saya
                     </button>
                 </div>
             </div>

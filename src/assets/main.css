@@ -29,3 +29,13 @@ body {
 .menu-style {
   @apply cursor-pointer text-base mb-4 text-body hover:text-primary lg:mb-0 lg:mr-8;
 }
+
+.social-icon {
+  @apply w-9 h-9 mr-3 rounded-full
+  text-slate-400 
+  flex justify-center items-center 
+  border border-slate-400
+  hover:border-primary
+  hover:bg-primary
+  hover:text-white;
+}
