@@ -1,35 +1,31 @@
-@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+body {
+  font-family: "Robboto", sans-serif;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+.little-text-section {
+  @apply font-semibold text-sm mb-3 md:text-base xl:text-lg;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-body;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.menu-style {
+  @apply cursor-pointer text-base mb-4 text-body hover:text-primary lg:mb-0 lg:mr-8;
 }
