@@ -6,6 +6,18 @@ body {
   font-family: "Robboto", sans-serif;
 }
 
+.section-title {
+  @apply font-bold uppercase text-primary text-lg mb-3 lg:text-xl;
+}
+
+.section-subtitle {
+  @apply font-bold text-heading text-3xl max-w-sm mb-4 lg:text-4xl;
+}
+
+.section-text {
+  @apply font-medium text-base text-body mb-8 lg:text-lg;
+}
+
 .little-text-section {
   @apply font-semibold text-sm mb-3 md:text-base xl:text-lg;
 }

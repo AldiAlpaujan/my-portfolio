@@ -17,13 +17,13 @@ import IconWa from './icons/IconWa.vue'
                         class="bg-transparent w-full mb-12 md:mb-0 lg:absolute lg:scale-105"> -->
                 </div>
                 <div class="w-full px-4 md:w-1/2 lg:ml-20">
-                    <h4 class="font-bold uppercase text-primary text-lg mb-3 lg:text-xl">
+                    <h4 class="section-title">
                         Tentang Saya
                     </h4>
-                    <h2 class="font-bold text-heading text-3xl max-w-sm mb-4 lg:text-4xl ">
+                    <h2 class="section-subtitle">
                         Mari, bangun aplikasi bersama saya!
                     </h2>
-                    <p class="font-medium text-base text-body mb-8 lg:text-lg">
+                    <p class="section-text">
                         Hallo Semua👋, Perkenalakan saya Aldi Muhamad Alpaujan Saya adalah seorang Flutter developer dengan
                         semangat besar untuk mengembangkan aplikasi mobile yang menarik. Dengan pengalaman
                         selama 1 tahun dalam membangun aplikasi menggunakan Flutter, saya telah bekerja pada berbagai proyek
