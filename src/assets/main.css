@@ -51,3 +51,20 @@ body {
   hover:bg-primary
   hover:text-white;
 }
+
+.contact-lable-text {
+  @apply font-normal text-base text-body;
+}
+.contact-input {
+  @apply mt-2 w-full border border-primary rounded-lg py-2 px-4 focus:outline-none;
+}
+
+.button-style {
+  @apply bg-primary text-base text-white py-3 px-4 mr-4 rounded-md transition duration-500
+  hover:opacity-90 hover:shadow-md active:opacity-80 active:shadow-lg lg:px-8;
+}
+.button-outline-style {
+  @apply py-[10px] px-[16px] text-base my-2 text-primary border border-primary rounded-md
+  transition-all duration-500 hover:bg-primary hover:text-white
+  active:opacity-80 active:shadow-lg lg:px-8;
+}

@@ -13,13 +13,10 @@
                         Berkarya dengan Flutter. Transformasi Ide menjadi Aplikasi yang Menakjubkan😊.
                     </p>
                     <div>
-                        <button class="bg-primary text-white py-3 px-4 mr-4 rounded-md transition duration-500
-                        hover:opacity-90 hover:shadow-md active:opacity-80 active:shadow-lg">
+                        <button class="button-style">
                             Download CV
                         </button>
-                        <button class="py-[10px] px-[16px] my-2 text-primary border border-primary rounded-md
-                        transition-all duration-500 hover:bg-primary hover:text-white
-                        active:opacity-80 active:shadow-lg lg:hidden">
+                        <button class="button-outline-style lg:hidden">
                             Hubungi Saya
                         </button>
                     </div>
