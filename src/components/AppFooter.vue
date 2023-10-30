@@ -20,6 +20,5 @@ function test() {
 
 <template>
     <footer>
-
     </footer>
 </template>

@@ -1,5 +1,7 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, } from 'vue';
+
+const emit = defineEmits(['onMenuHeaderClick']);
 
 const header = ref(null);
 const menu = ref([
@@ -13,12 +15,14 @@ const menuIsActive = ref(false);
 function onMenuClick(menu) {
     menuActive.value = menu;
     menuIsActive.value = false;
+    emit('onMenuHeaderClick', menu)
 }
 
 function onHamburgerClick() {
     var value = menuIsActive.value;
     menuIsActive.value = !value;
 }
+
 
 </script>
 
@@ -45,7 +49,7 @@ function onHamburgerClick() {
                         <ul class="block lg:flex ">
                             <li v-for="(item, index) in menu" :key="index"
                                 :class="index == (menu.length - 1) ? 'lg:mr-0' : ''" class="menu-style">
-                                <a href="#" @click="onMenuClick(item)" :class="item == menuActive ? 'text-primary' : ''"
+                                <a @click="onMenuClick(item)" :class="item == menuActive ? 'text-primary' : ''"
                                     class="transition-all duration-500">
                                     {{ item }}
                                 </a>
@@ -54,7 +58,7 @@ function onHamburgerClick() {
                     </nav>
                 </div>
                 <div class="hidden px-4 lg:block">
-                    <button class="py-[10px] px-[16px] my-2 text-primary border border-primary rounded-md
+                    <button @click="emit('onMenuHeaderClick', 'Contact Me')" class="py-[10px] px-[16px] my-2 text-primary border border-primary rounded-md
                     transition-all duration-500 hover:bg-primary hover:text-white
                     active:opacity-80 active:shadow-lg">
                         Hubungi Saya

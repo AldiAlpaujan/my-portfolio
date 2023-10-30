@@ -13,46 +13,54 @@ import data from '../data';
         <div class="container">
             <div class="flex flex-wrap items-center">
                 <div class="w-full px-4 self-start md:w-1/2 lg:w-1/3 lg:relative">
-                    <img src="../assets/img/aboutme.svg" alt="" class="mb-12 md:mb-0">
+                    <img data-aos="fade-up-right" data-aos-duration="1500" src="../assets/img/aboutme.svg" alt=""
+                        class="mb-12 md:mb-0">
                     <!-- <img src="../assets/img/aboutme.png" alt=""
                         class="bg-transparent w-full mb-12 md:mb-0 lg:absolute lg:scale-105"> -->
                 </div>
                 <div class="w-full px-4 md:w-1/2 lg:ml-20">
-                    <h4 class="section-title">
+                    <h4 data-aos="fade-up-left" data-aos-duration="1200" class="section-title">
                         Tentang Saya
                     </h4>
-                    <h2 class="section-subtitle">
+                    <h2 data-aos="fade-up-left" data-aos-duration="1400" class="section-subtitle">
                         Mari, bangun aplikasi bersama saya!
                     </h2>
-                    <p class="section-text">
+                    <p data-aos="fade-up-left" data-aos-duration="1600" class="section-text">
                         Hallo Semua👋, Perkenalakan saya Aldi Muhamad Alpaujan Saya adalah seorang Flutter developer dengan
                         semangat besar untuk mengembangkan aplikasi mobile yang menarik. Dengan pengalaman
                         selama 1 tahun dalam membangun aplikasi menggunakan Flutter, saya telah bekerja pada berbagai proyek
                         yang melibatkan UI yang elegan, fungsionalitas yang kuat.
                     </p>
-                    <h4 class="font-bold  text-heading text-2xl mb-3 lg:text-3xl">
+                    <h4 data-aos="fade-up-left" data-aos-duration="1800"
+                        class="font-bold  text-heading text-2xl mb-3 lg:text-3xl">
                         Mari Berteman dan Berkolaborasi!
                     </h4>
-                    <p class="font-medium text-base text-body mb-4 lg:text-lg">
+                    <p data-aos="fade-up-left" data-aos-duration="2000"
+                        class="font-medium text-base text-body mb-4 lg:text-lg">
                         Saya sangat antusias untuk berkolaborasi dengan individu dan tim yang memiliki visi untuk
                         menciptakan aplikasi yang luar biasa. Jika Anda memiliki proyek yang ingin dibangun menggunakan
                         Flutter atau ingin berbicara lebih lanjut tentang kemungkinan kerja sama, saya akan sangat senang
                         mendengarnya. Jangan ragu untuk menghubungi saya!
                     </p>
                     <div class="flex items-center">
-                        <a :href="data.igLink" target="_blank" class="social-icon">
+                        <a data-aos="fade-up" data-aos-duration="2000" :href="data.igLink" target="_blank"
+                            class="social-icon">
                             <IconInstagram />
                         </a>
-                        <a :href="data.waLink" target="_blank" class="social-icon">
+                        <a data-aos="fade-up" data-aos-duration="2100" :href="data.waLink" target="_blank"
+                            class="social-icon">
                             <IconWa />
                         </a>
-                        <a :href="data.teleLink" target="_blank" class="social-icon">
+                        <a data-aos="fade-up" data-aos-duration="2200" :href="data.teleLink" target="_blank"
+                            class="social-icon">
                             <IconTelegram />
                         </a>
-                        <a :href="data.githubLink" target="_blank" class="social-icon">
+                        <a data-aos="fade-up" data-aos-duration="2300" :href="data.githubLink" target="_blank"
+                            class="social-icon">
                             <IconGithub />
                         </a>
-                        <a :href="data.linkedinLink" target="_blank" class="social-icon">
+                        <a data-aos="fade-up" data-aos-duration="2400" :href="data.linkedinLink" target="_blank"
+                            class="social-icon">
                             <IconLinkedin />
                         </a>
                     </div>
