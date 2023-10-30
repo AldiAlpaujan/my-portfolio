@@ -4,6 +4,7 @@ import IconGithub from './icons/IconGithub.vue';
 import IconLinkedin from './icons/IconLinkedin.vue';
 import IconTelegram from './icons/IconTelegram.vue';
 import IconWa from './icons/IconWa.vue'
+import data from '../data';
 
 </script>
 
@@ -39,20 +40,19 @@ import IconWa from './icons/IconWa.vue'
                         mendengarnya. Jangan ragu untuk menghubungi saya!
                     </p>
                     <div class="flex items-center">
-                        <a href="https://www.instagram.com/AldiAlpaujan/" target="_blank" class="social-icon">
+                        <a :href="data.igLink" target="_blank" class="social-icon">
                             <IconInstagram />
                         </a>
-                        <a href="https://wa.me/+62895412744493" target="_blank" class="social-icon">
+                        <a :href="data.waLink" target="_blank" class="social-icon">
                             <IconWa />
                         </a>
-                        <a href="https://t.me/ProyekAldi" target="_blank" class="social-icon">
+                        <a :href="data.teleLink" target="_blank" class="social-icon">
                             <IconTelegram />
                         </a>
-                        <a href="https://github.com/AldiAlpaujan" target="_blank" class="social-icon">
+                        <a :href="data.githubLink" target="_blank" class="social-icon">
                             <IconGithub />
                         </a>
-                        <a href="https://www.linkedin.com/in/aldi-m-alpaujan-a265b426a/" target="_blank"
-                            class="social-icon">
+                        <a :href="data.linkedinLink" target="_blank" class="social-icon">
                             <IconLinkedin />
                         </a>
                     </div>
