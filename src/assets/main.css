@@ -56,7 +56,7 @@ body {
   @apply font-normal text-base text-body;
 }
 .contact-input {
-  @apply mt-2 w-full border border-primary rounded-lg py-2 px-4 focus:outline-none;
+  @apply mt-2 w-full border rounded-md py-2 px-4 focus:outline-none transition-all duration-500;
 }
 
 .button-style {
