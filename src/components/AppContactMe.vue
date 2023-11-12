@@ -78,10 +78,10 @@ function validation() {
                 <div class="px-4 w-full lg:w-2/3 lg:mx-auto">
                     <app-alert :show-alert="showAlert" />
                     <div class="w-full" :class="nameError ? 'mb-2' : ''">
-                        <label for="name" class="contact-label-text">
+                        <label for="username" class="contact-label-text">
                             Nama lengkap
                         </label>
-                        <input id="name" type="text" placeholder="Masukan nama lengkap" class="contact-input"
+                        <input id="username" type="text" placeholder="Masukan nama lengkap" class="contact-input"
                             :class="nameError ? 'border-red-500' : 'border-primary'" v-model="formInput.username.value">
                         <div class="text-xs pt-2 pl-4 text-red-500 transition-all duration-500"
                             :class="nameError ? 'opacity-100' : 'opacity-0'">
