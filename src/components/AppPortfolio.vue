@@ -36,11 +36,6 @@ var porfolios = [
         "name": "Canvasing Application",
         "caption": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
     },
-    {
-        "img": "src/assets/porfolio/dashboard application.png",
-        "name": "Dashboard Owner",
-        "caption": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
-    },
 
 ];
 

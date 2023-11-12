@@ -1,9 +1,12 @@
 <script setup>
+import AppAlert from './AppAlert.Vue';
+
 import axios from 'axios'
-import { ref, watch } from 'vue';
+import { ref } from 'vue';
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwDJGGpHiFuOKuhREFHx_cE8UMb4dyfvUmi6TnCL7ELQvmNv_V1JKnr-6HLKKbh2laO/exec';
 const isLoading = ref(false);
+const showAlert = ref(false);
 const nameError = ref(false);
 const emailError = ref(false);
 const messageError = ref(false);
@@ -20,7 +23,7 @@ async function onSubmit() {
     if (valid) {
         try {
             isLoading.value = true;
-            var response = await axios.post(scriptURL, {
+            await axios.post(scriptURL, {
                 nama: formInput.username.value,
                 email: formInput.email.value,
                 pesan: formInput.message.value,
@@ -30,13 +33,22 @@ async function onSubmit() {
                 }
             });
             isLoading.value = false;
-            console.log(response);
+            showAlert.value = true;
+            setTimeout(() => {
+                showAlert.value = false;
+            }, 3000);
+            clearForm();
         } catch (error) {
             isLoading.value = false;
             console.error('Error!', error.message)
         }
     }
+}
 
+function clearForm() {
+    formInput.username.value = "";
+    formInput.email.value = "";
+    formInput.message.value = "";
 }
 
 function validation() {
@@ -44,21 +56,9 @@ function validation() {
     if (formInput.username.value.length < 1) nameError.value = true; else nameError.value = false;
     if (valid) emailError.value = false; else emailError.value = true;
     if (formInput.message.value.length < 1) messageError.value = true; else messageError.value = false;
-
     return !nameError.value && !emailError.value && !messageError.value;
 }
 
-
-watch(formInput.username, (value) => {
-    if (value.length < 1) nameError.value = true; else nameError.value = false;
-});
-watch(formInput.email, (value) => {
-    let valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value);
-    if (valid) emailError.value = false; else emailError.value = true;
-});
-watch(formInput.message, (value) => {
-    if (value.length < 1) messageError.value = true; else messageError.value = false;
-});
 </script>
 
 <template>
@@ -73,8 +73,10 @@ watch(formInput.message, (value) => {
                     </p>
                 </div>
             </div>
+
             <form>
                 <div class="px-4 w-full lg:w-2/3 lg:mx-auto">
+                    <app-alert :show-alert="showAlert" />
                     <div class="w-full" :class="nameError ? 'mb-2' : ''">
                         <label for="name" class="contact-label-text">
                             Nama lengkap
