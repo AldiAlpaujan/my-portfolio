@@ -1,7 +1,62 @@
-let waLink = "https://wa.me/+62895412744493";
-let igLink = "https://www.instagram.com/AldiAlpaujan/";
-let teleLink = "https://t.me/ProyekAldi";
-let githubLink = "https://github.com/AldiAlpaujan";
-let linkedinLink = "https://www.linkedin.com/in/aldi-m-alpaujan-a265b426a/";
+const cvLink =
+  "https://drive.google.com/file/d/11qwX2kEFS1gG-YVXEKxELxLyVnCNGh-o/view?usp=drive_link";
+const waLink = "https://wa.me/+62895412744493";
+const igLink = "https://www.instagram.com/AldiAlpaujan/";
+const teleLink = "https://t.me/ProyekAldi";
+const githubLink = "https://github.com/AldiAlpaujan";
+const linkedinLink = "https://www.linkedin.com/in/aldi-m-alpaujan-a265b426a/";
 
-export default { waLink, igLink, teleLink, githubLink, linkedinLink };
+const portfolios = [
+  {
+    img: "src/assets/porfolio/canvasing.png",
+    name: "Canvasing Application",
+    caption:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
+  },
+  {
+    img: "src/assets/porfolio/dashboard application.png",
+    name: "Dashboard Owner",
+    caption:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
+  },
+  {
+    img: "src/assets/porfolio/canvasing.png",
+    name: "Canvasing Application",
+    caption:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
+  },
+  {
+    img: "src/assets/porfolio/dashboard application.png",
+    name: "Dashboard Owner",
+    caption:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
+  },
+  {
+    img: "src/assets/porfolio/canvasing.png",
+    name: "Canvasing Application",
+    caption:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
+  },
+  {
+    img: "src/assets/porfolio/dashboard application.png",
+    name: "Dashboard Owner",
+    caption:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
+  },
+  {
+    img: "src/assets/porfolio/canvasing.png",
+    name: "Canvasing Application",
+    caption:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
+  },
+];
+
+export default {
+  cvLink,
+  waLink,
+  igLink,
+  teleLink,
+  githubLink,
+  linkedinLink,
+  portfolios,
+};

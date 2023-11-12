@@ -1,44 +1,5 @@
 <script setup>
-
-var porfolios = [
-    {
-        "img": "src/assets/porfolio/canvasing.png",
-        "name": "Canvasing Application",
-        "caption": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
-    },
-    {
-        "img": "src/assets/porfolio/dashboard application.png",
-        "name": "Dashboard Owner",
-        "caption": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
-    },
-    {
-        "img": "src/assets/porfolio/canvasing.png",
-        "name": "Canvasing Application",
-        "caption": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
-    },
-    {
-        "img": "src/assets/porfolio/dashboard application.png",
-        "name": "Dashboard Owner",
-        "caption": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
-    },
-    {
-        "img": "src/assets/porfolio/canvasing.png",
-        "name": "Canvasing Application",
-        "caption": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
-    },
-    {
-        "img": "src/assets/porfolio/dashboard application.png",
-        "name": "Dashboard Owner",
-        "caption": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
-    },
-    {
-        "img": "src/assets/porfolio/canvasing.png",
-        "name": "Canvasing Application",
-        "caption": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
-    },
-
-];
-
+import data from '../data';
 </script>
 
 <template>
@@ -53,7 +14,7 @@ var porfolios = [
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-8 items-center justify-center ">
-                    <div v-for="(item, index) in  porfolios " :key="index" data-aos="fade-up"
+                    <div v-for="(item, index) in  data.portfolios" :key="index" data-aos="fade-up"
                         :data-aos-duration="400 * (index + 1)"
                         class="bg-white rounded-md shadow-lg sm:w-1/2 md:w-1/3 xl:w-1/4 group">
                         <div class="rounded-t-md overflow-hidden">

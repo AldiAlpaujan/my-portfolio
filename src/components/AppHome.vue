@@ -1,5 +1,9 @@
 <script setup>
+import data from '../data.js'
 
+function contactMe() {
+    document.getElementById("Contact Me").scrollIntoView({ behavior: 'smooth' });
+}
 
 </script>
 
@@ -20,10 +24,12 @@
                         Berkarya dengan Flutter. Transformasi Ide menjadi Aplikasi yang Menakjubkan😊.
                     </p>
                     <div>
-                        <button data-aos="fade-right" :data-aos-duration="1600" class="button-style">
-                            Download CV
+                        <button @click="downloadCv" data-aos="fade-right" :data-aos-duration="1600" class="button-style">
+                            <a :href="data.cvLink" target="_blank">Download
+                                CV </a>
                         </button>
-                        <button data-aos="fade-right" :data-aos-duration="2000" class="button-outline-style lg:hidden">
+                        <button @click="contactMe" data-aos="fade-right" :data-aos-duration="2000"
+                            class="button-outline-style lg:hidden">
                             Hubungi Saya
                         </button>
                     </div>

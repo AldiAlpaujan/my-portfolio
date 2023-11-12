@@ -15,7 +15,8 @@ function onMenuHeaderClick(menu) {
 
 onMounted(() => {
   AOS.init();
-})
+});
+
 </script>
 
 <template>
