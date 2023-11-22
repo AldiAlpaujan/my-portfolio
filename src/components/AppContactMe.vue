@@ -68,7 +68,7 @@ function validation() {
                 <div class="max-w-xl mx-auto text-center">
                     <h4 class="section-title">Hubungi Saya</h4>
                     <h2 class="section-subtitle mx-auto">Mari Jalin Relasi</h2>
-                    <p class="section-text">
+                    <p class="section-text mb-8">
                         Mari berkarya dibidang teknologi bersama😊
                     </p>
                 </div>

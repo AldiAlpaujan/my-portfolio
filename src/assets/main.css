@@ -15,7 +15,7 @@ body {
 }
 
 .section-text {
-  @apply font-medium text-base text-body mb-8 lg:text-lg;
+  @apply font-medium text-base text-body lg:text-lg;
 }
 
 .little-text-section {

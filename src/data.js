@@ -14,40 +14,19 @@ const portfolios = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
   },
   {
-    img: "src/assets/porfolio/dashboard application.png",
+    img: "src/assets/porfolio/dbo.png",
     name: "Dashboard Owner",
-    caption:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
+    caption: "Lorem, ipsum dolor sit amet consectetur ",
   },
   {
-    img: "src/assets/porfolio/canvasing.png",
-    name: "Canvasing Application",
-    caption:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
-  },
-  {
-    img: "src/assets/porfolio/dashboard application.png",
+    img: "src/assets/porfolio/resto.png",
     name: "Dashboard Owner",
-    caption:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
+    caption: "Lorem, ipsum dolor sit amet consectetur ",
   },
   {
-    img: "src/assets/porfolio/canvasing.png",
-    name: "Canvasing Application",
-    caption:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
-  },
-  {
-    img: "src/assets/porfolio/dashboard application.png",
+    img: "src/assets/porfolio/waitter.png",
     name: "Dashboard Owner",
-    caption:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
-  },
-  {
-    img: "src/assets/porfolio/canvasing.png",
-    name: "Canvasing Application",
-    caption:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
+    caption: "Lorem, ipsum dolor sit amet consectetur ",
   },
 ];
 
