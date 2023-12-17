@@ -11,22 +11,25 @@ const portfolios = [
     img: "src/assets/porfolio/canvasing.png",
     name: "Canvasing Application",
     caption:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque",
+      "Aplikasi yang dibuat untuk user, dimana user bisa melakukan penjualan jarak jauh / beda outlet.",
   },
   {
     img: "src/assets/porfolio/dbo.png",
     name: "Dashboard Owner",
-    caption: "Lorem, ipsum dolor sit amet consectetur ",
+    caption:
+      "Aplikasi dashboard untuk user melihat berbagai jenis laporan penjualan, pembelian, dll.",
   },
   {
     img: "src/assets/porfolio/resto.png",
-    name: "Dashboard Owner",
-    caption: "Lorem, ipsum dolor sit amet consectetur ",
+    name: "RZF Resto",
+    caption:
+      "Sebuah aplikasi untuk restoran, dengan aplikasi ini harapanya dapat memudahakan owner restoran dan pegawainya.",
   },
   {
     img: "src/assets/porfolio/waitter.png",
-    name: "Dashboard Owner",
-    caption: "Lorem, ipsum dolor sit amet consectetur ",
+    name: "Waitter Application",
+    caption:
+      "Aplikasi pendukung dari aplikasi desktop milik perusahaan untuk pelayan restoran.",
   },
 ];
 

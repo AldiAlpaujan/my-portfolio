@@ -16,7 +16,7 @@ import data from '../data';
                 <div class="flex flex-wrap gap-8 items-center justify-center ">
                     <div v-for="(item, index) in  data.portfolios" :key="index" data-aos="fade-up"
                         :data-aos-duration="400 * (index + 1)"
-                        class="bg-white h-80 rounded-md shadow-lg sm:w-1/2 md:w-1/3 xl:w-1/4 group">
+                        class="bg-white h-[350px] rounded-md shadow-lg sm:w-1/2 md:w-1/3 xl:w-1/4 group">
                         <div class="rounded-t-md overflow-hidden">
                             <img :src="item.img" alt="project" class="w-full shadow-none transition group-hover:scale-110">
                         </div>
