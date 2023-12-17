@@ -29,7 +29,8 @@ async function onSubmit() {
                 pesan: formInput.message.value,
             }, {
                 headers: {
-                    'Content-Type': 'multipart/form-data'
+                    'Access-Control-Allow-Origin': '*',
+                    'Content-Type': 'multipart/form-data',
                 }
             });
             isLoading.value = false;

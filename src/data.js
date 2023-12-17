@@ -1,5 +1,5 @@
 const cvLink =
-  "https://drive.google.com/file/d/11qwX2kEFS1gG-YVXEKxELxLyVnCNGh-o/view?usp=drive_link";
+  "https://drive.google.com/file/d/1tdKQNNXXt3sM6lL2cBdWYJBTi2h_dq2G/view?usp=sharing";
 const waLink = "https://wa.me/+62895412744493";
 const igLink = "https://www.instagram.com/AldiAlpaujan/";
 const teleLink = "https://t.me/ProyekAldi";
