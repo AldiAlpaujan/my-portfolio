@@ -4,7 +4,7 @@ import AppAlert from './AppAlert.Vue';
 import axios from 'axios'
 import { ref } from 'vue';
 
-const url = 'https://script.google.com/macros/s/AKfycbwDJGGpHiFuOKuhREFHx_cE8UMb4dyfvUmi6TnCL7ELQvmNv_V1JKnr-6HLKKbh2laO/exec';
+const url = 'https://script.google.com/macros/s/AKfycbxbl1O2dJd3aIToMySh0nSp2Da0ZOEA5geQ9gnL24mbi67Pn8X_3rTFga-ntw_OL0eR/exec';
 const isLoading = ref(false);
 const showAlert = ref(false);
 const nameError = ref(false);
@@ -23,26 +23,25 @@ async function onSubmit() {
     if (valid) {
         try {
             isLoading.value = true;
-            await axios.post(url, {
+            var response = await axios.post(url, {
                 nama: formInput.username.value,
                 email: formInput.email.value,
                 pesan: formInput.message.value,
             }, {
                 headers: {
-                    'Access-Control-Allow-Origin': '*',
                     'Content-Type': 'multipart/form-data',
                 }
             });
             isLoading.value = false;
-            showAlert.value = true;
-            setTimeout(() => {
-                showAlert.value = false;
-            }, 3000);
-            clearForm();
         } catch (error) {
             isLoading.value = false;
-            console.error('Error!', error.message)
         }
+
+        showAlert.value = true;
+        setTimeout(() => {
+            showAlert.value = false;
+        }, 3000);
+        clearForm();
     }
 }
 
