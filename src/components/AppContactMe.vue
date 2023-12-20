@@ -1,10 +1,9 @@
 <script setup>
 import AppAlert from './AppAlert.Vue';
-
-import axios from 'axios'
+import { dbFirestore } from '../firebase/init.js'
+import { doc, setDoc } from "firebase/firestore";
 import { ref } from 'vue';
 
-const url = 'https://script.google.com/macros/s/AKfycbxbl1O2dJd3aIToMySh0nSp2Da0ZOEA5geQ9gnL24mbi67Pn8X_3rTFga-ntw_OL0eR/exec';
 const isLoading = ref(false);
 const showAlert = ref(false);
 const nameError = ref(false);
@@ -23,25 +22,21 @@ async function onSubmit() {
     if (valid) {
         try {
             isLoading.value = true;
-            var response = await axios.post(url, {
-                nama: formInput.username.value,
+            await setDoc(doc(dbFirestore, 'message', formInput.email.value), {
+                name: formInput.username.value,
                 email: formInput.email.value,
-                pesan: formInput.message.value,
-            }, {
-                headers: {
-                    'Content-Type': 'multipart/form-data',
-                }
+                message: formInput.message.value,
             });
             isLoading.value = false;
+            showAlert.value = true;
+            setTimeout(() => {
+                showAlert.value = false;
+            }, 3000);
+            clearForm();
         } catch (error) {
             isLoading.value = false;
+            console.error(error);
         }
-
-        showAlert.value = true;
-        setTimeout(() => {
-            showAlert.value = false;
-        }, 3000);
-        clearForm();
     }
 }
 

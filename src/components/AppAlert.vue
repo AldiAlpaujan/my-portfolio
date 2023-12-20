@@ -34,7 +34,7 @@ watch(() => props.showAlert, (value) => {
 </script>
 
 <template>
-    <div :class="hidden ? 'h-0 mb-0' : 'h-14 mb-4'" class="transition-all duration-500">
+    <div :class="hidden ? 'h-0 mb-0' : 'h-20 md:h-14 mb-4'" class=" transition-all duration-500">
         <div :class="opacity, hidden ? 'hidden' : 'flex'"
             class="transition duration-500 items-center p-4 mb-4 rounded-lg text-green-800 border-t-4 border-green-300 bg-green-50"
             role="alert">
