@@ -1,5 +1,8 @@
 <script setup>
 import data from '../data';
+
+
+
 </script>
 
 <template>
@@ -18,7 +21,7 @@ import data from '../data';
                         :data-aos-duration="400 * (index + 1)"
                         class="bg-white h-[350px] rounded-md shadow-lg sm:w-1/2 md:w-1/3 xl:w-1/4 group">
                         <div class="rounded-t-md overflow-hidden">
-                            <img :src="item.img" alt="project" class="w-full shadow-none transition group-hover:scale-110">
+                            <img :src='item.img' alt="project" class="w-full shadow-none transition group-hover:scale-110">
                         </div>
                         <div class="p-4 text-start">
                             <h3 class="font-semibold text-lg text-heading pb-2">
