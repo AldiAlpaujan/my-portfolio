@@ -8,25 +8,25 @@ const linkedinLink = "https://www.linkedin.com/in/aldi-m-alpaujan-a265b426a/";
 
 const portfolios = [
   {
-    img: "/assets/portfolio/canvasing.png",
+    img: "/assets/canvasing.png",
     name: "Canvasing Application",
     caption:
       "Aplikasi yang dibuat untuk user, dimana user bisa melakukan penjualan jarak jauh / beda outlet.",
   },
   {
-    img: "/assets/portfolio/dbo.png",
+    img: "/assets/dbo.png",
     name: "Dashboard Owner",
     caption:
       "Aplikasi dashboard untuk user melihat berbagai jenis laporan penjualan, pembelian, dll.",
   },
   {
-    img: "/assets/portfolio/resto.png",
+    img: "/assets/resto.png",
     name: "RZF Resto",
     caption:
       "Sebuah aplikasi untuk restoran, dengan aplikasi ini harapanya dapat memudahakan owner restoran dan pegawainya.",
   },
   {
-    img: "/assets/portfolio/waitter.png",
+    img: "/assets/waitter.png",
     name: "Waitter Application",
     caption:
       "Aplikasi pendukung dari aplikasi desktop milik perusahaan untuk pelayan restoran.",
